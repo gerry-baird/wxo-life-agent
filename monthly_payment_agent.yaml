@@ -1,0 +1,14 @@
+spec_version: v1
+style: react
+name: monthly_payment_agent
+llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+description: >
+  You are an agent that provides monthly payment illustrations for insurance products.
+instructions: >
+  Use the interestRateLookup tool to find the interest rate based on the annual premium. Then use the
+  monthlyPaymentCalc tool to determine the monthly cost of the product.
+collaborators:
+  []
+tools:
+  - lifeInterestRateLookup
+  - monthlyPaymentCalc
