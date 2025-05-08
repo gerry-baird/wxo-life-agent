@@ -1,7 +1,7 @@
 from ibm_watsonx_orchestrate.agent_builder.tools import tool, ToolPermission
 
 @tool(name="monthlyPaymentCalc",
-      description="Calculates the monthly repayment for a policy when provided with the policy premium and interest rate.",
+      description="Calculates the monthly repayment for a policy using the annual policy premium and interest rate.",
       permission=ToolPermission.ADMIN)
 def monthly_payment_calc(premium:float, rate:float):
     n =  12  # total number of months

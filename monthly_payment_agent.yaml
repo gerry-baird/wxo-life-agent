@@ -5,10 +5,13 @@ llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
 description: >
   You are an agent that provides monthly payment illustrations for insurance products.
 instructions: >
-  Use the interestRateLookup tool to find the interest rate based on the annual premium. Then use the
-  monthlyPaymentCalc tool to determine the monthly cost of the product.
+  Use the interestRateLookup tool to find the interest rate, then use the monthlyPaymentCalc tool to calculate 
+  the monthly payment based on the interest rate and annual premium of the policy.  
+  
+  DO NOT provide an approximate monthly payment, always use the monthlyPaymentCalc tool to determine 
+  the monthly payment.
 collaborators:
   []
 tools:
-  - lifeInterestRateLookup
+  - interestRateLookup
   - monthlyPaymentCalc
