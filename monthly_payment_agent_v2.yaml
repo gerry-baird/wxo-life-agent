@@ -15,5 +15,5 @@ instructions: >
 collaborators:
   []
 tools:
-  - interestRateLookup
-  - monthlyPaymentCalc
+  - interest_rate_lookup
+  - monthly_payment_calc

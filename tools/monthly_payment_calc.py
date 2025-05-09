@@ -1,6 +1,6 @@
 from ibm_watsonx_orchestrate.agent_builder.tools import tool, ToolPermission
 
-@tool(name="monthlyPaymentCalc",
+@tool(name="monthly_payment_calc",
       description="Calculates the monthly repayment for a policy using the annual policy premium and interest rate.",
       permission=ToolPermission.ADMIN)
 def monthly_payment_calc(premium:float, rate:float):
