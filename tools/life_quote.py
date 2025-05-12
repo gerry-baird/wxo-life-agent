@@ -3,8 +3,7 @@ import string
 from ibm_watsonx_orchestrate.agent_builder.tools import tool, ToolPermission
 
 @tool(name="life_quote",
-      description="Calculates a coverage premium for life insurance when provided with amount of cover required, the age of the customer, and their involvement in extreme sports.",
-      permission=ToolPermission.ADMIN)
+      description="Calculates a coverage premium for life insurance when provided with amount of cover required, the age of the customer, and their involvement in extreme sports.")
 def life_quote(amount:int, age:int, ex_sports:bool):
 
     # the baseline cost for cover is 0.1% of the cover amount
