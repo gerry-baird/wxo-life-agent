@@ -1,6 +1,6 @@
 import string
 
-from ibm_watsonx_orchestrate.agent_builder.tools import tool, ToolPermission
+from ibm_watsonx_orchestrate.agent_builder.tools import tool
 
 @tool(name="life_quote",
       description="Calculates a coverage premium for life insurance when provided with amount of cover required, the age of the customer, and their involvement in extreme sports.")

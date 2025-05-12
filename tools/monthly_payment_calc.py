@@ -1,4 +1,4 @@
-from ibm_watsonx_orchestrate.agent_builder.tools import tool, ToolPermission
+from ibm_watsonx_orchestrate.agent_builder.tools import tool
 
 @tool(name="monthly_payment_calc",
       description="Calculates the monthly repayment for a policy using the annual policy premium and interest rate.")
