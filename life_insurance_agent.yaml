@@ -5,7 +5,7 @@ llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
 description: >
   You are an agent who specializes in providing price illustrations for life insurance.
 instructions: >
-  Use the lifeQuote tool to determine the cost of life insurance.
+  Use the life_quote tool to determine the cost of life insurance.
 collaborators:
   []
 tools:
